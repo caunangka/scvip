@@ -79,10 +79,10 @@ echo -e "$green      Install SSH / WS / UDP              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-curl "${repo}/menu/ssh-vpn.sh" | bash
+wget ${repo}/menu/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 sleep 2
-wget ${repo}/nginx-ssl.sh && chmod +x nginx-ssl.sh && ./nginx-ssl.sh
-wget -q -O demeling.sh ${repo}/demeling.sh && chmod +x demeling.sh && ./demeling.sh
+wget -O nginx-ssl.sh ${repo}/nginx-ssl.sh && chmod +x nginx-ssl.sh && ./nginx-ssl.sh
+wget -O demeling.sh ${repo}/demeling.sh && chmod +x demeling.sh && ./demeling.sh
 cd
 mkdir -p /root/udp
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
@@ -94,7 +94,7 @@ wget -q --show-progress --load-cookies /tmp/cookies.txt "https://docs.google.com
 if [ -z "$1" ]; then
 cat <<EOF > /etc/systemd/system/udp-custom.service
 [Unit]
-Description=udp-custom by ©CyberVPN
+Description=udp-custom by ©YogzVPN
 [Service]
 User=root
 Type=simple
@@ -108,7 +108,7 @@ EOF
 else
 cat <<EOF > /etc/systemd/system/udp-custom.service
 [Unit]
-Description=udp-custom by ©CyberVPN
+Description=udp-custom by ©YogzVPN
 [Service]
 User=root
 Type=simple
@@ -230,10 +230,7 @@ fi
 cd
 echo "1.0.0" > versi
 clear
-rm -f ins-xray.sh
-rm -f senmenu.sh
-rm -f setupku.sh
-rm -f xraymode.sh
+rm -rf /root/*.sh
 echo "=====================-[  Yogz Project  ]-===================="
 echo ""
 echo "------------------------------------------------------------"
