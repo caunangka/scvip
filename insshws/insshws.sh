@@ -6,8 +6,8 @@ apt install python -y
 
 #Install Script Websocket-SSH Python
 wget -O /usr/local/bin/edu-proxy https://raw.githubusercontent.com/Azigaming404/websocket/main/openssh.py && chmod +x /usr/local/bin/edu-proxy
-wget -O /usr/local/bin/ws-dropbear ${repo}/Insshws/dropbear-ws.py.txt
-wget -O /usr/local/bin/ws-stunnel ${repo}/Insshws/ws-stunnel.txt
+wget -O /usr/local/bin/ws-dropbear ${repo}/insshws/dropbear-ws.py.txt
+wget -O /usr/local/bin/ws-stunnel ${repo}/insshws/ws-stunnel.txt
 #wget -O /usr/local/bin/edu-proxyovpn https://gitlab.com/hidessh/baru/-/raw/main/websocket-python/baru/ovpn.py && chmod +x /usr/local/bin/edu-proxyovpn
 
 #izin permision
@@ -22,10 +22,10 @@ chmod +x /usr/local/bin/edu-proxyovpn
 wget -O /etc/systemd/system/edu-proxy.service https://gitlab.com/hidessh/baru/-/raw/main/websocket-python/baru/http.service && chmod +x /etc/systemd/system/edu-proxy.service
 
 #System Dropbear Websocket-SSH Python
-wget -O /etc/systemd/system/ws-dropbear.service ${repo}/Insshws/service-wsdropbear.txt && chmod +x /etc/systemd/system/ws-dropbear.service
+wget -O /etc/systemd/system/ws-dropbear.service ${repo}/insshws/service-wsdropbear.txt && chmod +x /etc/systemd/system/ws-dropbear.service
 
 #System SSL/TLS Websocket-SSH Python
-wget -O /etc/systemd/system/ws-stunnel.service ${repo}/Insshws/ws-stunnel.service.txt && chmod +x /etc/systemd/system/ws-stunnel.service
+wget -O /etc/systemd/system/ws-stunnel.service ${repo}/insshws/ws-stunnel.service.txt && chmod +x /etc/systemd/system/ws-stunnel.service
 
 ##System Websocket-OpenVPN Python
 #wget -O /etc/systemd/system/edu-proxyovpn.service https://gitlab.com/hidessh/baru/-/raw/main/websocket-python/baru/ovpn.service && chmod +x /etc/systemd/system/edu-proxyovpn.service
