@@ -166,7 +166,7 @@ curl "${repo}/ipsec/ipsec.sh" | bash
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green      Install OPENVPN             $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-wget "${repo}/Insshws/vpn.sh" && bash vpn.sh && rm vpn.sh
+wget ${repo}/Insshws/vpn.sh && chmod +x vpn.sh && ./vpn.sh
 clear
 echo "Installing Bot Panel" | lolcat
 echo "Siapkan Token bot dan ID telegram mu"
