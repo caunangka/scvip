@@ -78,9 +78,6 @@ d1=$(date -d "$Exp2" +%s)
 d2=$(date -d "$today" +%s)
 left=$(((d1 - d2) / 86400))
 
-rm cybervpn.zip
-rm -rf cybervpn.zip
-
 datediff() {
     d1=$(date -d "$1" +%s)
     d2=$(date -d "$2" +%s)
@@ -133,7 +130,7 @@ fi
 ## // ddos
 dos=$( systemctl status ddos | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $dos == "running" ]]; then
-    status_dos="[${GREEN} running${NC} ]"
+    status_dos="✅ ok"
 else
     status_dos="❌ died"
 fi
@@ -158,7 +155,6 @@ fi
 
 ttoday="$(vnstat | grep today | awk '{print $8" "substr ($9, 1, 3)}' | head -1)"
 tmon="$(vnstat -m | grep `date +%G-%m` | awk '{print $8" "substr ($9, 1 ,3)}' | head -1)"
-bot
 clear
 
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
