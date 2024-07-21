@@ -1,6 +1,6 @@
 #!/bin/bash
 
-repo="https://raw.githubusercontent.com/YogzSC/scvip/main"
+repo="https://raw.githubusercontent.com/caunangka/scvip/main"
 # initializing var
 
 export DEBIAN_FRONTEND=noninteractive

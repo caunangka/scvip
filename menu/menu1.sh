@@ -1,3 +1,3 @@
 #!/bin/bash
 
-curl -sS "https://raw.githubusercontent.com/YogzSC/scvip/main/menu/dashboard.sh" | bash
+curl -sS "https://raw.githubusercontent.com/caunangka/scvip/main/menu/dashboard.sh" | bash

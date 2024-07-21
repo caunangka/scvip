@@ -49,7 +49,7 @@ export Server_IP="underfined"
 export Script_Mode="Stable"
 export Auther="XdrgVPN"
 # Getting
-repo="https://raw.githubusercontent.com/YogzSC/scvip/main"
+repo="https://raw.githubusercontent.com/caunangka/scvip/main"
 MYIP=$(wget -qO- ipinfo.io/ip);
 
 if [ ! -e /tmp/trojan ]; then
@@ -69,7 +69,7 @@ rm -rf /root/status
 wget -q -O /root/status "${repo}/statushariini" 
 
 today=`date -d "0 days" +"%Y-%m-%d"`
-Exp2=$(curl -sS https://raw.githubusercontent.com/YogzSC/permission/main/ip | grep $MYIP | awk '{print $3}')
+Exp2=$(curl -sS https://raw.githubusercontent.com/caunangka/permission/main/ip | grep $MYIP | awk '{print $3}')
 if [ "$Exp2" == "lifetime" ]; then
     Exp2="2099-12-09"
 fi
@@ -101,8 +101,8 @@ wget -q -O updatsc.sh "${repo}/menu/updateyes.sh" && chmod +x updatsc.sh && ./up
 
 # // Exporting IP Address
 export MYIP=$( curl -s https://ipinfo.io/ip/ )
-Name=$(curl -sS https://raw.githubusercontent.com/YogzSC/permission/main/ip | grep $MYIP | awk '{print $2}')
-Exp=$(curl -sS https://raw.githubusercontent.com/YogzSC/permission/main/ip | grep $MYIP | awk '{print $3}')
+Name=$(curl -sS https://raw.githubusercontent.com/caunangka/permission/main/ip | grep $MYIP | awk '{print $2}')
+Exp=$(curl -sS https://raw.githubusercontent.com/caunangka/permission/main/ip | grep $MYIP | awk '{print $3}')
 
 # // nginx
 nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )

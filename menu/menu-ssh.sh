@@ -45,7 +45,7 @@ export Server_Port="443"
 export Server_IP="underfined"
 export Script_Mode="Stable"
 export Auther=".geovpn"
-repo="https://raw.githubusercontent.com/YogzSC/scvip/main"
+repo="https://raw.githubusercontent.com/caunangka/scvip/main"
 
 wget -q -O /usr/bin/lock "${repo}/limit/user-lock.sh" && chmod 777 /usr/bin/lock
 

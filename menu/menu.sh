@@ -28,7 +28,7 @@ export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 
 # // Exporting URL Host
-repo="https://raw.githubusercontent.com/YogzSC/scvip/main"
+repo="https://raw.githubusercontent.com/caunangka/scvip/main"
 export Server_URL="autosc.me/aio"
 export Server_Port="443"
 export Server_IP="underfined"
