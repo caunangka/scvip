@@ -1,7 +1,7 @@
 #!/bin/bash
 # // config Data
 clear
-repo="https://raw.githubusercontent.com/YogzSC/scvip/main"
+repo="https://raw.githubusercontent.com/caunangka/scvip/main"
 mkdir -p /root/folder
 
 echo -e "${GREEN}Harap Bersabar Tuan${NC}"

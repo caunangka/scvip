@@ -5,7 +5,7 @@ green='\e[0;32m'
 yell='\e[1;33m'
 tyblue='\e[1;36m'
 NC='\e[0m'
-repo="https://raw.githubusercontent.com/YogzSC/scvip/main"
+repo="https://raw.githubusercontent.com/caunangka/scvip/main"
 echo -e "Memeriksa VPS Anda..."
 sleep 0.5
 
@@ -15,7 +15,7 @@ apt install python -y >/dev/null 2>&1
 
 CEKEXPIRED() {
     today=$(date -d "+1 day" "+%Y-%m-%d")
-    Exp1=$(curl -sS https://raw.githubusercontent.com/YogzSC/permission/main/ip | grep $MYIP | awk '{print $3}')
+    Exp1=$(curl -sS https://raw.githubusercontent.com/caunangka/permission/main/ip | grep $MYIP | awk '{print $3}')
     if [[ $today < $Exp1 ]]; then
         echo -e "Status script aktif."
     else
@@ -23,7 +23,7 @@ CEKEXPIRED() {
         exit 0
     fi
 }
-IZIN=$(curl -sS https://raw.githubusercontent.com/YogzSC/permission/main/ip | awk '{print $4}' | grep $MYIP)
+IZIN=$(curl -sS https://raw.githubusercontent.com/caunangka/permission/main/ip | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo "IZIN DI TERIMA!!"
 else

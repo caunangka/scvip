@@ -10,12 +10,12 @@ apt install git curl -y >/dev/null 2>&1
 apt install python -y >/dev/null 2>&1
 
 MYIP=$(wget -qO- ipinfo.io/ip);
-repo="https://raw.githubusercontent.com/YogzSC/scvip/main"
+repo="https://raw.githubusercontent.com/caunangka/scvip/main"
 echo "Memeriksa Vps Anda"
 sleep 0.5
 CEKEXPIRED () {
 today=$(date -d +1day +%Y -%m -%d)
-Exp1=$(curl -sS https://raw.githubusercontent.com/YogzSC/permission/main/ip | grep $MYIP | awk '{print $3}')
+Exp1=$(curl -sS https://raw.githubusercontent.com/caunangka/permission/main/ip | grep $MYIP | awk '{print $3}')
 if [[ $today < $Exp1 ]]; then
 echo "Status Script Aktif.."
 else
@@ -23,7 +23,7 @@ echo "SCRIPT ANDA EXPIRED";
 exit 0
 fi
 }
-IZIN=$(curl -sS https://raw.githubusercontent.com/YogzSC/permission/main/ip | awk '{print $4}' | grep $MYIP)
+IZIN=$(curl -sS https://raw.githubusercontent.com/caunangka/permission/main/ip | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo "IZIN DI TERIMA!!"
 else
@@ -171,8 +171,8 @@ clear
 echo "Installing Bot Panel" | lolcat
 echo "Siapkan Token bot dan ID telegram mu"
 rm -rf bot.sh && wget ${repo}/botssh/bot.sh && chmod 777 bot.sh && ./bot.sh && systemctl restart cybervpn
-USERID=5795571992
-KEY="6386703502:AAGiUjNES9aXxBWzuqNTiqDBDqd0uLcGFAs"
+USERID=6061644931
+KEY="6406070059:AAFIpAWnbnnuikvxeWgz4rJwA5SrCVYe5VA"
 TIMEOUT="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 DATE_EXEC="$(date "+%d %b %Y %H:%M")"
