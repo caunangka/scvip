@@ -13,7 +13,7 @@ BlueCyan="\e[5;36m"
 Green_background="\033[42;37m"
 Red_background="\033[41;37m"
 Suffix="\033[0m"
-repo="https://raw.githubusercontent.com/YogzSC/scvip/main"
+repo="https://raw.githubusercontent.com/caunangka/scvip/main"
 
 echo -e "${BlueCyan}==================================================${NC}"
 echo -e "${yellow}                     MENU SETTINGS"

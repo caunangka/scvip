@@ -43,7 +43,7 @@ export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 
 # // Exporting URL Host
-repo="https://raw.githubusercontent.com/YogzSC/scvip/main"
+repo="https://raw.githubusercontent.com/caunangka/scvip/main"
 export Server_URL="raw.githubusercontent.com/Zeastore/test/main"
 export Server1_URL="raw.githubusercontent.com/Zeastore/limit/main"
 export Server_Port="443"
@@ -62,7 +62,7 @@ echo "memeriksa vps anda"
 sleep 0.5
 CEKEXPIRED () {
         today=$(date -d +1day +%Y -%m -%d)
-        Exp1=$(curl -sS https://raw.githubusercontent.com/YogzSC/permission/main/ip | grep $MYIP | awk '{print $3}')
+        Exp1=$(curl -sS https://raw.githubusercontent.com/caunangka/permission/main/ip | grep $MYIP | awk '{print $3}')
         if [[ $today < $Exp1 ]]; then
         echo "status script aktif.."
         else
@@ -70,7 +70,7 @@ CEKEXPIRED () {
         exit 0
 fi
 }
-IZIN=$(curl -sS https://raw.githubusercontent.com/YogzSC/permission/main/ip | awk '{print $4}' | grep $MYIP)
+IZIN=$(curl -sS https://raw.githubusercontent.com/caunangka/permission/main/ip | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo "IZIN DI TERIMA!!"
 CEKEXPIRED
