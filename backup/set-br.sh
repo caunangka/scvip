@@ -13,7 +13,7 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-repo="https://raw.githubusercontent.com/YogzSC/scvip/main"
+repo="https://raw.githubusercontent.com/caunangka/scvip/main"
 sudo apt install ruby -y
 gem install lolcat -y
 apt install msmtp-mta ca-certificates bsd-mailx -y
